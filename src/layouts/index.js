@@ -26,15 +26,6 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
-    <div>
-      { data.allMarkdownRemark.edges.map( ({node}) => {
-        return (
-          <div key={node.id}>
-            <Link to={node.frontmatter.path}>{ node.frontmatter.title }</Link>
-          </div>
-        )
-      } ) }
-    </div>
   </div>
 )
 
