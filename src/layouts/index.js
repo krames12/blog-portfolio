@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
 import Header from '../components/header'
 import './index.scss'
@@ -25,6 +26,15 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+    <div>
+      { data.allMarkdownRemark.edges.map( ({node}) => {
+        return (
+          <div key={node.id}>
+            <Link to={node.frontmatter.path}>{ node.frontmatter.title }</Link>
+          </div>
+        )
+      } ) }
+    </div>
   </div>
 )
 
@@ -39,6 +49,18 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          id
+          frontmatter {
+            path
+            title
+          }
+        }
       }
     }
   }
