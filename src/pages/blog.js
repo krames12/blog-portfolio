@@ -1,10 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const BlogList = ({data}) => (
+export default ({data}) => (
   <div>
     <h1>Ramblings And Thoughts</h1>
   </div>
 )
 
-export default BlogList
+export const listQuery = graphql`
+    query BlogListQuery {
+        allMarkdownRemark {
+            edge {
+                node {
+                    html
+                    id
+                    frontmatter {
+                        path
+                        title
+                    }
+                }
+            }
+        }
+    }
+`
