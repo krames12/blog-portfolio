@@ -1,5 +1,436 @@
+/* Variable Declaration */
+// $ian-green: #95C37F;
+$primary-blue: #329DE7;
+$ian-green-dark: #6FCC78;
+$ian-purple: #D0AFDB;
+$ian-purple-dark: #B37DDB;
+$slate: #555555;
+
+/* Core Stuff */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $slate;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $slate;
+  margin: 5px;
+}
+
+a {
+  color: #1F8CD6;
+  text-decoration: none;
+  &:hover {
+    color: #175E91;
+  }
+}
+
+pre {
+  background: #F0F0F0;
+  margin: 1rem 0;
+  border-radius: 2px;
+}
+
+blockquote {
+  border-left: 10px solid #eee;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+/* Utility Classes */
+
+.wrapper {
+  margin: 0 3rem;
+}
+
+.padding {
+  padding: 0.5rem 0.5rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.selected {
+  background-color: $primary-blue;
+}
+
+/* Content Styling */
+
+#top {
+  padding: 0;
+  margin: 0;
+}
+
 .site-container {
-    min-width: 320px;
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  color: $slate;
+  border-bottom: 1px solid $primary-blue;
+  height: 75px;
+  line-height: 75px;
+  position: fixed;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  .padding {
+    padding: 1em 0;
+  }
+  a {
+    color: $slate;
+  }
+  .logo {
+    font-size: 1.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 75px;
+    transition: all 0.2s ease-in-out;
+    z-index: 5;
+    @media only screen and (max-width: 640px) {
+      font-size: 1.3em;
+    }
+    i {
+      padding: 10px;
+      background-color: $primary-blue;
+      color: white;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+  }
+}
+
+// Compensation for having a 'sticky' navigation
+#body {
+  margin: 65px 3em 0px 3em;
+  @media only screen and (max-width: 530px) {
+    margin: 75px 0 0 0 ;
+  }
+}
+
+/* Menu Settings */
+
+.main-nav {
+  float: right;
+  #nav-container {
+    letter-spacing: -1em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    @media only screen and (max-width: 640px) {
+      position: absolute;
+      max-height: 0px;
+      overflow: hidden;
+      left: 0;
+      top: 70px;
+      width: 100%;
+      color: white;
+      background-color: $primary-blue;
+      text-align: center;
+      transition: max-height 0.2s ease-in-out;
+    }
+    &.active {
+      padding-bottom: 25px;
+      max-height: calc(55px * 4);
+    }
+    li {
+      display: inline-block;
+      letter-spacing: normal;
+      height: 100%;
+      width: auto;
+      transition: all 0.2s ease-in-out;
+      @media only screen and (max-width: 640px) {
+        display: block;
+      }
+      a {
+        position: relative;
+        line-height: 45px;
+        padding: 0 20px;
+        white-space: nowrap;
+      }
+      &:hover {
+        background-color: $primary-blue;
+        @media only screen and (max-width: 640px) {
+          background-color: $ian-green-dark;
+        }
+      }
+      &.selected{
+        a {
+          color: white;
+          }
+      }
+      position: relative;
+    }
+  }
+  #nav-toggle {
+    display: none;
+    line-height: 75px;
+    cursor: pointer;
+    @media only screen and (max-width: 640px) {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    margin-bottom: 5px;
+  }
+}
+
+/* Portfolio Layout */
+
+/* Project-Image & Project-Pages */
+
+/* Project Meta Data */
+
+.project-meta-container {
+  width: 200px;
+  @media only screen and (max-width: 740px) {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .meta-individual {
+    p {
+      display: inline-block;
+      margin: 4px 8px;
+    }
+    .download-link {
+      text-align: center;
+      .download-button {
+        margin-top: 10px;
+        background-color: $ian-purple;
+        color: white;
+        padding: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $ian-purple-dark;
+        }
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+
+/* Project Content */
+
+.project-content-image {
+  display: inline-block;
+  @media only screen and (max-width: 740px) {
+    display: block;
+    width: 100%;
+  }
+  p > img {
+    width: 100%;
+  }
+  .content {
+    float: left;
+    width: 70%;
+    @media only screen and (max-width: 815px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 740px) {
+      clear: both;
+      width: 100%;
+    }
+  }
+  .project-meta-container {
+    width: 100%;
+    .meta-individual {
+      display: inline-block;
+      @media only screen and (max-width: 640px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.project-content-video {
+  display: block;
+  // position: relative;
+    .grav-vimeo {
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-top: 25px;
+      padding-bottom: 50%;
+      margin-bottom: 10px;
+      max-width: 1920px;
+      max-height: 1080px;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  .content {
+    float: left;
+    width: 70%;
+    @media only screen and (max-width: 815px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 740px) {
+      clear: both;
+      width: 100%;
+    }
+  }
+  .project-meta-container {
+    float: right;
+  }
+}
+
+/* Projects Like This */
+
+.projects-like-this {
+  clear: both;
+  display: block;
+  width: 90%;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  @media only screen and (max-width: 655px) {
+    width: 100%;
+    margin: 20px auto 5px auto;
+  }
+  .similar-project-container {
+    display: inline-block;
+    margin: 10px;
+    @media only screen and (max-width: 650px) {
+      display: block;
+      margin: 5px auto;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    p {
+      margin: 5px;
+    }
+  }
+}
+
+/* About Me */
+
+.about-container {
+  width: 100%;
+  box-sizing: border-box;
+  .about-content {
+    width: 59%;
+    display: inline-block;
+    margin: 5px;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      display: block;
+    }
+  }
+  .about-sidebar {
+    width: 35%;
+    margin-left: 4%;
+    display: inline-block;
+    vertical-align: top;
+    @media only screen and (max-width: 800px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+    .recent-blog-posts {
+      width: 100%;
+      text-align: left;
+      margin: 5px auto;
+    }
+  }
+}
+
+
+/* Footer */
+
+.social-links {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 3rem 0;
+  margin: 10px;
+}
+
+.social {
+  color: black;
+  margin: 0.5rem;
+  text-decoration: none;
+  line-height: 2rem;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.54, 2.16);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.vimeo {
+  color: #1ab7ea;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+/* Footer */
+
+.reference-link {
+  color: $slate;
+  background-color: white;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: $ian-purple-dark;
+  }
+}
+
+.grav-icon {
+  color: $slate;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: $ian-purple-dark;
+  }
 }
