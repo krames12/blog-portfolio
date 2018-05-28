@@ -9,7 +9,7 @@ const Footer = ({ siteTitle }) => (
         <a href="https://twitter.com/krames12">
           <Icon.Twitter className="social twitter" />
         </a>
-        <a href="https://www.linkedin.com/in/ian-chase-15531172">
+        <a href="https://www.linkedin.com/in/nick-kramer-22320035">
           <Icon.Linkedin className="social linkedin" />
         </a>
         <a href="mailt:krames12@gmail.com">

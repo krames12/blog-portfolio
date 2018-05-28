@@ -2,7 +2,7 @@
 // $ian-green: #95C37F;
 $primary: #329DE7;
 $primary-dark: #213F5F;
-$ian-purple: #D0AFDB;
+$secondary: #FFCA3A;
 $ian-purple-dark: #B37DDB;
 $slate: #555555;
 
@@ -125,9 +125,6 @@ header {
     }
     i {
       padding: 10px;
-      background-color: $primary;
-      color: white;
-      border-radius: 50%;
       margin-right: 5px;
     }
   }
@@ -158,13 +155,13 @@ nav {
       top: 70px;
       width: 100%;
       color: white;
-      background-color: $primary;
+      background-color: white;
       text-align: center;
       transition: max-height 0.2s ease-in-out;
     }
     &.active {
       padding-bottom: 25px;
-      max-height: calc(55px * 4);
+      max-height: calc(55px * 3);
     }
     li {
       display: inline-block;
@@ -174,15 +171,21 @@ nav {
       transition: all 0.2s ease-in-out;
       @media only screen and (max-width: 640px) {
         display: block;
+        border-bottom: 1px solid $primary;
+        margin: 0;
       }
       a {
         position: relative;
         line-height: 45px;
         padding: 0 20px;
         white-space: nowrap;
+        transition: all 0.2s ease-in-out;
       }
       &:hover {
         background-color: $primary;
+        a {
+            color: white;
+        }
         @media only screen and (max-width: 640px) {
           background-color: $primary-dark;
         }
@@ -231,12 +234,12 @@ nav {
       text-align: center;
       .download-button {
         margin-top: 10px;
-        background-color: $ian-purple;
+        background-color: $secondary;
         color: white;
         padding: 10px;
         transition: all 0.2s ease-in-out;
         &:hover {
-          background-color: $ian-purple-dark;
+          background-color: $secondary;
         }
         span {
           font-weight: 700;
@@ -423,6 +426,6 @@ nav {
   font-weight: 700;
   transition: color 0.2s ease-in-out;
   &:hover {
-    color: $ian-purple-dark;
+    color: $secondary;
   }
 }
