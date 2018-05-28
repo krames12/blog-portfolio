@@ -7,7 +7,7 @@ export default function Template({data}) {
     return (
         <div key={post.id}>
             <h1>{post.frontmatter.title}</h1>
-            <h4>{post.frontmatter.date}</h4>
+            <h4 className="blog-post-date">{post.frontmatter.date}</h4>
             <div dangerouslySetInnerHTML={{__html:post.html}} />
         </div>
     )
