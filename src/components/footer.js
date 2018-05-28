@@ -4,7 +4,7 @@ import * as Icon from 'react-feather'
 
 const Footer = ({ siteTitle }) => (
   <footer>
-    <div class="social-links text-center">
+    <div className="social-links text-center">
         <h2>CONTACT</h2>
         <a href="https://twitter.com/krames12">
           <Icon.Twitter className="social twitter" />
@@ -17,9 +17,9 @@ const Footer = ({ siteTitle }) => (
         </a>
     </div>
 
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p>Crafted by: &#60;Designer&#62; <a href="http://www.synergyfirm.com/" class="reference-link">Synergy Web &amp; Graphics</a> &amp; &#60;Developer&#62; <a href="http://nickkramer.me" class="reference-link">Nick Kramer</a></p>
+    <div className="footer text-center">
+        <div className="wrapper padding">
+            <p>Crafted by: &#60;Designer&#62; <a href="http://www.synergyfirm.com/" className="reference-link">Synergy Web &amp; Graphics</a> &amp; &#60;Developer&#62; <a href="http://nickkramer.me" className="reference-link">Nick Kramer</a></p>
         </div>
     </div>
   </footer>

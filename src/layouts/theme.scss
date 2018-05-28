@@ -1,7 +1,7 @@
 /* Variable Declaration */
 // $ian-green: #95C37F;
-$primary-blue: #329DE7;
-$ian-green-dark: #6FCC78;
+$primary: #329DE7;
+$primary-dark: #213F5F;
 $ian-purple: #D0AFDB;
 $ian-purple-dark: #B37DDB;
 $slate: #555555;
@@ -79,7 +79,7 @@ blockquote {
 }
 
 .selected {
-  background-color: $primary-blue;
+  background-color: $primary;
 }
 
 /* Content Styling */
@@ -95,10 +95,10 @@ blockquote {
   margin: 0 auto;
 }
 
-.header {
+header {
   background-color: white;
   color: $slate;
-  border-bottom: 1px solid $primary-blue;
+  border-bottom: 1px solid $primary;
   height: 75px;
   line-height: 75px;
   position: fixed;
@@ -115,7 +115,7 @@ blockquote {
   }
   .logo {
     font-size: 1.7em;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 75px;
     transition: all 0.2s ease-in-out;
@@ -125,7 +125,7 @@ blockquote {
     }
     i {
       padding: 10px;
-      background-color: $primary-blue;
+      background-color: $primary;
       color: white;
       border-radius: 50%;
       margin-right: 5px;
@@ -135,7 +135,7 @@ blockquote {
 
 // Compensation for having a 'sticky' navigation
 #body {
-  margin: 65px 3em 0px 3em;
+  margin: 75px 3em 0px 3em;
   @media only screen and (max-width: 530px) {
     margin: 75px 0 0 0 ;
   }
@@ -143,7 +143,7 @@ blockquote {
 
 /* Menu Settings */
 
-.main-nav {
+nav {
   float: right;
   #nav-container {
     letter-spacing: -1em;
@@ -158,7 +158,7 @@ blockquote {
       top: 70px;
       width: 100%;
       color: white;
-      background-color: $primary-blue;
+      background-color: $primary;
       text-align: center;
       transition: max-height 0.2s ease-in-out;
     }
@@ -182,9 +182,9 @@ blockquote {
         white-space: nowrap;
       }
       &:hover {
-        background-color: $primary-blue;
+        background-color: $primary;
         @media only screen and (max-width: 640px) {
-          background-color: $ian-green-dark;
+          background-color: $primary-dark;
         }
       }
       &.selected{
@@ -196,11 +196,11 @@ blockquote {
     }
   }
   #nav-toggle {
-    display: none;
+    visibility: hidden;
     line-height: 75px;
     cursor: pointer;
     @media only screen and (max-width: 640px) {
-      display: block;
+      visibility: visible;
     }
   }
   @media only screen and (max-width: 640px) {
@@ -384,7 +384,7 @@ blockquote {
 .social-links {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   margin: 10px;
 }
 
@@ -421,14 +421,6 @@ blockquote {
   color: $slate;
   background-color: white;
   font-weight: 700;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: $ian-purple-dark;
-  }
-}
-
-.grav-icon {
-  color: $slate;
   transition: color 0.2s ease-in-out;
   &:hover {
     color: $ian-purple-dark;

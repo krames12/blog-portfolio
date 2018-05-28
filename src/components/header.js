@@ -1,18 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Terminal } from 'react-feather'
 
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        className="logo left"
+      >
+        <Terminal />
+        Nick Kramer
+      </Link>
       <nav>
-        <ul>
+        <ul id="nav-container">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -20,6 +21,7 @@ const Header = ({ siteTitle }) => (
             <Link to="/blog">Blog</Link>
           </li>
         </ul>
+        <div id="nav-toggle" className="right">Menu</div>
       </nav>
     </div>
   </header>
