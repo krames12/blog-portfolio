@@ -4,10 +4,12 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 import './index.scss'
+import './theme.scss'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="site-container">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -16,16 +18,10 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
