@@ -1,19 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import * as Icon from 'react-feather'
+import { Twitter, Linkedin, Mail, Github } from 'react-feather'
 
 const Footer = ({ siteTitle }) => (
   <footer>
     <div className="social-links text-center">
-        <h2>CONTACT</h2>
+        <h2>Get in touch with me!</h2>
         <a href="https://twitter.com/krames12">
-          <Icon.Twitter className="social twitter" />
+          <Twitter className="social twitter" />
+        </a>
+        <a href="https://www.github.com/krames12">
+          <Github className="social github" />
         </a>
         <a href="https://www.linkedin.com/in/nick-kramer-22320035">
-          <Icon.Linkedin className="social linkedin" />
+          <Linkedin className="social linkedin" />
         </a>
-        <a href="mailt:krames12@gmail.com">
-          <Icon.Mail className="social email" />
+        <a href="mailto:krames12@gmail.com">
+          <Mail className="social email" />
         </a>
     </div>
 
