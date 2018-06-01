@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import { Terminal } from 'react-feather'
 
 class Header extends Component {
   constructor() {
@@ -22,7 +21,7 @@ class Header extends Component {
             to="/"
             className="logo left" >
             <i>
-              <Terminal />
+              <i className="fa fa-terminal"></i>
             </i>
             Nick Kramer
           </Link>

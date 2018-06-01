@@ -7,6 +7,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import './index.scss'
 import './theme.scss'
+import '../css/fontawesome/css/fontawesome-all.min.css'
 
 const Layout = ({ children, data }) => (
   <div className="site-container">
