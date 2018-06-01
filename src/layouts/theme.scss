@@ -3,7 +3,7 @@
 $primary: #329DE7;
 $primary-dark: #213F5F;
 $secondary: #FFCA3A;
-$ian-purple-dark: #B37DDB;
+$accent: #419D78;
 $slate: #555555;
 
 /* Core Stuff */
@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #1F8CD6;
+  color: $primary;
   text-decoration: none;
   &:hover {
-    color: #175E91;
+    color: $primary-dark;
   }
 }
 
@@ -84,6 +84,10 @@ blockquote {
 
 .selected {
   background-color: $primary;
+}
+
+.accent-emphasis {
+  color: $accent;
 }
 
 /* Content Styling */
@@ -164,7 +168,6 @@ nav {
       transition: max-height 0.2s ease-in-out;
     }
     &.active {
-      padding-bottom: 25px;
       max-height: calc(55px * 3);
     }
     li {
@@ -181,7 +184,7 @@ nav {
       a {
         position: relative;
         line-height: 45px;
-        padding: 0 20px;
+        padding: 25px;
         white-space: nowrap;
         transition: all 0.2s ease-in-out;
       }
@@ -191,7 +194,7 @@ nav {
             color: white;
         }
         @media only screen and (max-width: 640px) {
-          background-color: $primary-dark;
+          background-color: $primary;
         }
       }
       &.selected{
@@ -212,6 +215,41 @@ nav {
   }
   @media only screen and (max-width: 640px) {
     margin-bottom: 5px;
+  }
+}
+
+/* About Me */
+#about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 5% 0;
+  width: 100%;
+  @media only screen and (max-width: 530px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #headshot {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    @media only screen and (max-width: 530px) {
+      grid-column: 1 / -1;
+    }
+  }
+  #descriptors {
+    display: inline-block;
+    text-align: right;
+    p {
+      font-size: 1.5em;
+      margin: 5px 0;
+    }
+    @media only screen and (max-width: 530px) {
+      text-align: left;
+      margin: 20px 0;
+    }
   }
 }
 
@@ -422,6 +460,10 @@ nav {
   color: #ea4c89;
 }
 
+.d-and-d {
+  color: red;
+}
+
 /* Footer */
 
 .reference-link {
@@ -430,6 +472,6 @@ nav {
   font-weight: 700;
   transition: color 0.2s ease-in-out;
   &:hover {
-    color: $secondary;
+    color: $accent;
   }
 }
