@@ -86,6 +86,14 @@ blockquote {
   background-color: $primary;
 }
 
+.primary-emphasis {
+  color: $primary;
+}
+
+.secondary-emphasis {
+  color: $secondary;
+}
+
 .accent-emphasis {
   color: $accent;
 }
@@ -251,9 +259,22 @@ nav {
       margin: 20px 0;
     }
   }
+  #self-description {
+    padding: 20px;
+    grid-column: 1 / -1;
+    font-size: 1.3em;
+    text-align: center;
+  }
 }
 
-/* Portfolio Layout */
+/* Projects - Main Page */
+
+#projects {
+  padding: 10px 0;
+  &:empty:after {
+    content: 'Projects coming very soon';
+  }
+}
 
 /* Project-Image & Project-Pages */
 
@@ -419,6 +440,25 @@ nav {
       width: 100%;
       text-align: left;
       margin: 5px auto;
+    }
+  }
+}
+
+/* Blog Posts & Cards */
+#blog-post-list {
+  margin: 20px 0 0 0 ;;
+  .blog-post-card {
+    padding: 5px;
+    list-style: none;
+    .blog-post-title {
+      font-size: 1.5em;
+    }
+    .blog-post-card-contents {
+      width: 95%;
+      margin: 0 auto;
+      .blog-post-date {
+        margin-bottom: 0;
+      }
     }
   }
 }

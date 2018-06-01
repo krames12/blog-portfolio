@@ -12,13 +12,16 @@ const IndexPage = ({data}) => (
         <p>Gamer</p>
       </div>
       <p id="self-description">
-        I'm a <span className="accent-emphasis">Web Developer</span> who loves to develop solutions to real world problems, learn new technologies, and slay monsters <i className="fab fa-d-and-d d-and-d"></i>
+        I'm a <span className="accent-emphasis">&#60;WebDeveloper /&#62;</span> who loves to create solutions to real world problems, learn new technologies, and slay monsters <i className="fab fa-d-and-d d-and-d"></i>
       </p>
     </div>
     <div id="projects">
-
+      <h2>Projects</h2>
+      <div className="text-center">
+        <h4>Coming very soon!</h4>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </div>
 )
 
