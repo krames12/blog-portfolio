@@ -136,7 +136,7 @@ header {
     line-height: 75px;
     transition: all 0.2s ease-in-out;
     z-index: 5;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 660px) {
       font-size: 1.3em;
     }
     i {
@@ -163,7 +163,7 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 660px) {
       position: absolute;
       max-height: 0px;
       overflow: hidden;
@@ -176,7 +176,7 @@ nav {
       transition: max-height 0.2s ease-in-out;
     }
     &.active {
-      max-height: calc(55px * 3);
+      max-height: calc(55px * 4);
     }
     li {
       display: inline-block;
@@ -184,7 +184,7 @@ nav {
       height: 100%;
       width: auto;
       transition: all 0.2s ease-in-out;
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 660px) {
         display: block;
         border-bottom: 1px solid $primary;
         margin: 0;
@@ -201,7 +201,7 @@ nav {
         a {
             color: white;
         }
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 660px) {
           background-color: $primary;
         }
       }
@@ -218,11 +218,11 @@ nav {
     line-height: 75px;
     padding: 0 10px;
     cursor: pointer;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 660px) {
       visibility: visible;
     }
   }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 660px) {
     margin-bottom: 5px;
   }
 }
@@ -275,14 +275,8 @@ nav {
   .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 660px) {
       grid-template-columns: 1fr;
-    }
-    .project-screenshot {
-      display: block;
-      img {
-        width: 200%;
-      }
     }
     .project-description {
       padding: 0 30px;

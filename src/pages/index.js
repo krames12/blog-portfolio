@@ -26,14 +26,13 @@ const IndexPage = ({data}) => (
         </div>
         <div className="project-description image-left">
           <h3>LUMDB <a href="https://github.com/krames12/lumdb"><i className="icon fab fa-github"></i></a></h3>
-          <p>Movie database that pulls the top 20 movies from <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and tv show API.</p>
-          <h4>Technology Used</h4>
           <ul className="project-tech-used">
             <li><p>React</p></li>
             <li><p>Javascript</p></li>
             <li><p>SASS</p></li>
             <li><p>Gatsby.js</p></li>
           </ul>
+          <p>Movie database that pulls the top 20 movies from <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and tv show API.</p>
         </div>
       </div>
       <div className="project-container">
@@ -42,13 +41,12 @@ const IndexPage = ({data}) => (
         </div>
         <div className="project-description image-right">
           <h3>PugCheck <a href="https://github.com/krames12/pugcheck-symfony"><i className="icon fab fa-github"></i></a></h3>
-          <p>A clean and simple World of Warcraft character look up displaying their current raid progression, as well as logs for that given fight and difficulty if available. Using the <a href="www.worldofwarcraft.com">World of Warcraft</a> & <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.</p>
-          <h4>Technology Used</h4>
           <ul className="project-tech-used">
             <li><p>Symfony 3</p></li>
             <li><p>PHP</p></li>
             <li><p>CSS</p></li>
           </ul>
+          <p>A clean and simple World of Warcraft character look up displaying their current raid progression, as well as logs for that given fight and difficulty if available. Using the <a href="www.worldofwarcraft.com">World of Warcraft</a> & <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.</p>
         </div>
       </div>
     </div>

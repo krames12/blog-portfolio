@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import Resume from '../documents/Nick_Kramer_Resume_2018.pdf'
 
 class Header extends Component {
   constructor() {
@@ -35,6 +36,9 @@ class Header extends Component {
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <a href={Resume}>Resume</a>
               </li>
             </ul>
             <div
