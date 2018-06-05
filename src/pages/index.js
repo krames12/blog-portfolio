@@ -25,7 +25,7 @@ const IndexPage = ({data}) => (
           <img src={lumfull} alt="LUMDB main page"/>
         </div>
         <div className="project-description image-left">
-          <h3>LUMDB</h3>
+          <h3>LUMDB <a href="https://github.com/krames12/lumdb"><i className="icon fab fa-github"></i></a></h3>
           <p>Movie database that pulls the top 20 movies from <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and tv show API.</p>
           <h4>Technology Used</h4>
           <ul className="project-tech-used">
@@ -41,7 +41,7 @@ const IndexPage = ({data}) => (
           <img src={pugcheck} alt="PugCheck character view"/>
         </div>
         <div className="project-description image-right">
-          <h3>PugCheck</h3>
+          <h3>PugCheck <a href="https://github.com/krames12/pugcheck-symfony"><i className="icon fab fa-github"></i></a></h3>
           <p>A clean and simple World of Warcraft character look up displaying their current raid progression, as well as logs for that given fight and difficulty if available. Using the <a href="www.worldofwarcraft.com">World of Warcraft</a> & <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.</p>
           <h4>Technology Used</h4>
           <ul className="project-tech-used">
