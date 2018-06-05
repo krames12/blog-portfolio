@@ -216,6 +216,7 @@ nav {
   #nav-toggle {
     visibility: hidden;
     line-height: 75px;
+    padding: 0 10px;
     cursor: pointer;
     @media only screen and (max-width: 640px) {
       visibility: visible;
@@ -271,8 +272,29 @@ nav {
 
 #projects {
   padding: 10px 0;
-  &:empty:after {
-    content: 'Projects coming very soon';
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+    .project-screenshot {
+      display: block;
+      img {
+        width: 200%;
+      }
+    }
+    .project-description {
+      padding: 0 30px;
+      .project-tech-used {
+        list-style: none;
+        margin: 0;
+        li {
+          display: inline-block;
+          padding: 5px;
+        }
+      }
+    }
   }
 }
 
