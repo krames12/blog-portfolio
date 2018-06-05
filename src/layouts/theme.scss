@@ -216,6 +216,7 @@ nav {
   #nav-toggle {
     visibility: hidden;
     line-height: 75px;
+    padding: 0 10px;
     cursor: pointer;
     @media only screen and (max-width: 640px) {
       visibility: visible;
