@@ -37,6 +37,9 @@ const IndexPage = ({data}) => (
         </div>
       </div>
       <div className="project-container">
+        <div className="project-screenshot">
+          <img src={pugcheck} alt="PugCheck character view"/>
+        </div>
         <div className="project-description image-right">
           <h3>PugCheck</h3>
           <p>A clean and simple World of Warcraft character look up displaying their current raid progression, as well as logs for that given fight and difficulty if available. Using the <a href="www.worldofwarcraft.com">World of Warcraft</a> & <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.</p>
@@ -46,9 +49,6 @@ const IndexPage = ({data}) => (
             <li><p>PHP</p></li>
             <li><p>CSS</p></li>
           </ul>
-        </div>
-        <div className="project-screenshot">
-          <img src={pugcheck} alt="PugCheck character view"/>
         </div>
       </div>
     </div>
