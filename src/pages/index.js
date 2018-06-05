@@ -20,16 +20,15 @@ const IndexPage = ({data}) => (
     </div>
     <div id="projects">
       <h2>Projects</h2>
-      <div className="project-container image-left">
-        <div className="project-screenshot multiple-screenshots">
+      <div className="project-container">
+        <div className="project-screenshot">
           <img src={lumfull} alt="LUMDB main page"/>
-          <img src={lummovie} alt="LUMDB main page"/>
         </div>
-        <div className="project-description">
+        <div className="project-description image-left">
           <h3>LUMDB</h3>
           <p>Movie database that pulls the top 20 movies from <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and tv show API.</p>
           <h4>Technology Used</h4>
-          <ul>
+          <ul className="project-tech-used">
             <li><p>React</p></li>
             <li><p>Javascript</p></li>
             <li><p>SASS</p></li>
@@ -37,19 +36,19 @@ const IndexPage = ({data}) => (
           </ul>
         </div>
       </div>
-      <div className="project-container image-right">
-        <div className="project-screenshot">
-          <img src={pugcheck} alt="PugCheck character view"/>
-        </div>
-        <div className="project-description">
+      <div className="project-container">
+        <div className="project-description image-right">
           <h3>PugCheck</h3>
           <p>A clean and simple World of Warcraft character look up displaying their current raid progression, as well as logs for that given fight and difficulty if available. Using the <a href="www.worldofwarcraft.com">World of Warcraft</a> & <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.</p>
           <h4>Technology Used</h4>
-          <ul>
+          <ul className="project-tech-used">
             <li><p>Symfony 3</p></li>
             <li><p>PHP</p></li>
             <li><p>CSS</p></li>
           </ul>
+        </div>
+        <div className="project-screenshot">
+          <img src={pugcheck} alt="PugCheck character view"/>
         </div>
       </div>
     </div>
