@@ -8,6 +8,15 @@ export default props => (
       <ul className="project-card-info-tech">
         {props.technologies.map(tech => <li>{tech}</li>)}
       </ul>
+      <ul className="project-card-links">
+        {props.links.map(link => (
+          <li>
+            <a href={link.url}>
+              <i className={link.classes} />
+            </a>
+          </li>
+        ))}
+      </ul>
       <p className="project-card-info-description">{props.description}</p>
     </div>
   </div>
