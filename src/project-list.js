@@ -33,4 +33,22 @@ export default [
     <a href="www.worldofwarcraft.com">World of Warcraft</a> &{' '}
     <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.`,
   },
+  {
+    title: 'LUMDB',
+    image: 'Movie-List-LUMDB.png',
+    technologies: ['React', 'Javascript', 'SCSS'],
+    links: [
+      {
+        url: 'https://focused-visvesvaraya-2ed5bf.netlify.com/',
+        classes: 'icon fas fa-link',
+      },
+      {
+        url: 'https://github.com/krames12/lumbd',
+        classes: 'icon fab fa-github',
+      },
+    ],
+    description: `Movie database that pulls the top 20 movies from{' '}
+    <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and
+    tv show API.`,
+  },
 ]
