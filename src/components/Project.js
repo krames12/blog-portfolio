@@ -1,15 +1,15 @@
 import React from 'react'
 
-export default props => (
+export default ({ project }) => (
   <div className="project-card">
-    <img src={props.image} className="project-card-image" />
+    <img src={project.image} className="project-card-image" />
     <div className="project-card-info">
-      <h4>{props.title}</h4>
-      <ul className="project-card-info-tech">
-        {props.technologies.map(tech => <li>{tech}</li>)}
+      <h4>{project.title}</h4>
+      <ul className="project-tech">
+        {project.technologies.map(tech => <li>{tech}</li>)}
       </ul>
-      <ul className="project-card-links">
-        {props.links.map(link => (
+      <ul className="project-links">
+        {project.links.map(link => (
           <li>
             <a href={link.url}>
               <i className={link.classes} />
@@ -17,7 +17,7 @@ export default props => (
           </li>
         ))}
       </ul>
-      <p className="project-card-info-description">{props.description}</p>
+      <p className="project-description">{project.description}</p>
     </div>
   </div>
 )
