@@ -2,7 +2,9 @@ import React from 'react'
 
 export default ({ project }) => (
   <div className="project-card">
-    <img src={project.image} className="project-card-image" />
+    <div className="project-card-image">
+      <img src={project.image} />
+    </div>
     <div className="project-card-info">
       <h4>{project.title}</h4>
       <ul className="project-tech">

@@ -16,7 +16,7 @@ export default [
         classes: 'icon fab fa-github',
       },
     ],
-    description: `Supplying World of Warcraft raid teams with a place to organize teammates in their assigned roles as well as pulling important character information from Blizzard’s API.`,
+    description: `A Warcraft raid team organization tool using Blizzard’s API.`,
   },
   {
     title: 'PugCheck',
@@ -32,9 +32,8 @@ export default [
         classes: 'icon fab fa-github',
       },
     ],
-    description: `A World of Warcraft character progression lookup tool that allows users to check raid progression and logs to gauge player performance. Using the{' '}
-    <a href="www.worldofwarcraft.com">World of Warcraft</a> &{' '}
-    <a href="www.warcraftlogs.com">WarcraftLogs</a> API's.`,
+    description: `A Warcraft character progression lookup tool using the
+    World of Warcraft & WarcraftLogs API's.`,
   },
   {
     title: 'LUMDB',
@@ -50,8 +49,7 @@ export default [
         classes: 'icon fab fa-github',
       },
     ],
-    description: `Movie database that pulls the top 20 movies from{' '}
-    <a href="https://www.themoviedb.org/">TheMovieDB.org</a>'s movie and
-    tv show API.`,
+    description: `Movie database that pulls the top 20 movies from
+    TheMovieDB.org's movie and tv show API.`,
   },
 ]
