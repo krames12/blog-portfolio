@@ -286,12 +286,15 @@ nav {
       grid-template-columns: 1fr;
     }
   }
-  .project-card-info {
-    padding: 5px;
-  }
   .project-card {
+    background: white;
+    border-radius: 10px;
     margin: 10px;
-
+    box-shadow: 4px 9px 28px rgba(0,0,0,0.15);
+    height: min-content;
+  }
+  .project-card-info {
+    padding: 5px 10px;
   }
   .project-card-image {
     position: relative;
@@ -318,6 +321,9 @@ nav {
   }
   .project-links li {
     font-size: 1.2rem;
+  }
+  .project-description {
+    margin-bottom: 0
   }
 }
 
