@@ -1,10 +1,8 @@
-import PugCheckImage from './images/Character-View-PugCheck.png'
-import LUMDBImage from './images/Movie-List-LUMDB.jpg'
-
 export default [
   {
     title: 'PugCheck Teams',
-    image: PugCheckImage,
+    image:
+      'https://res.cloudinary.com/dndefcztu/image/upload/v1546363167/portfolio/pugcheck-teams.png',
     technologies: ['Laravel', 'PHP', 'MySQL', 'SCSS'],
     links: [
       {
@@ -20,7 +18,8 @@ export default [
   },
   {
     title: 'PugCheck',
-    image: PugCheckImage,
+    image:
+      'https://res.cloudinary.com/dndefcztu/image/upload/v1546362644/portfolio/Character-View-PugCheck.png',
     technologies: ['Laravel', 'PHP', 'MySQL', 'SCSS'],
     links: [
       {
@@ -37,7 +36,8 @@ export default [
   },
   {
     title: 'LUMDB',
-    image: LUMDBImage,
+    image:
+      'https://res.cloudinary.com/dndefcztu/image/upload/v1546362644/portfolio/Movie-List-LUMDB.jpg',
     technologies: ['React', 'Javascript', 'SCSS'],
     links: [
       {

@@ -7,7 +7,11 @@ import projects from '../project-list'
 const IndexPage = ({ data }) => (
   <div>
     <div id="about-me">
-      <img src={headshot} id="headshot" alt="Nick Kramer Headshot" />
+      <img
+        src="https://res.cloudinary.com/dndefcztu/image/upload/v1546362644/portfolio/nick_headshot_cropped.jpg"
+        id="headshot"
+        alt="Nick Kramer Headshot"
+      />
       <div id="descriptors">
         <p>Lifelong Learner</p>
         <p>Developer</p>
