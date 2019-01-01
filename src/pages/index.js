@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import headshot from '../images/nick_headshot_cropped.jpg'
 import Project from '../components/Project'
 import projects from '../project-list'
 
