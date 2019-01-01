@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.scss'
 import './theme.scss'
 import '../css/fontawesome/css/fontawesome-all.min.css'
@@ -14,14 +14,16 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Nick Kramer - Builder of web things' },
+        {
+          name: 'keywords',
+          content:
+            'web, web development, react, javascript, php, laravel, css, scss, developer',
+        },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div id="body">
-      {children()}
-    </div>
+    <div id="body">{children()}</div>
     <Footer />
   </div>
 )

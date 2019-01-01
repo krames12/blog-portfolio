@@ -1,5 +1,6 @@
 /* Variable Declaration */
 // $ian-green: #95C37F;
+$primary-background: #e6e9eb;
 $primary: #329DE7;
 $primary-dark: #213F5F;
 $secondary: #FFCA3A;
@@ -15,6 +16,7 @@ $slate: #555555;
 }
 
 body {
+  background: $primary-background;
   font-size: 1rem;
   line-height: 1.7;
   color: $slate;
@@ -98,6 +100,10 @@ blockquote {
   color: $accent;
 }
 
+.icon {
+  margin: 5px;
+}
+
 /* Content Styling */
 
 #top {
@@ -112,7 +118,7 @@ blockquote {
 }
 
 header {
-  background-color: white;
+  background-color: $primary-background;
   color: $slate;
   border-bottom: 1px solid $primary;
   height: 75px;
@@ -171,7 +177,7 @@ nav {
       top: 70px;
       width: 100%;
       color: white;
-      background-color: white;
+      background-color: $primary-background;
       text-align: center;
       transition: max-height 0.2s ease-in-out;
     }
@@ -199,7 +205,7 @@ nav {
       &:hover {
         background-color: $primary;
         a {
-            color: white;
+            color: $primary-background;
         }
         @media only screen and (max-width: 660px) {
           background-color: $primary;
@@ -272,23 +278,60 @@ nav {
 
 #projects {
   padding: 10px 0;
-  .project-container {
+  .project-container{
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
     @media only screen and (max-width: 660px) {
       grid-template-columns: 1fr;
     }
-    .project-description {
-      padding: 0 30px;
-      .project-tech-used {
-        list-style: none;
-        margin: 0;
-        li {
-          display: inline-block;
-          padding: 5px;
-        }
-      }
+  }
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 4px 9px 28px rgba(0,0,0,0.15);
+  }
+  .project-card-info {
+    padding: 15px;
+    font-weight: 500;
+  }
+  .project-card-image {
+    position: relative;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    img {
+      position: absolute;
+      top: -15%;
     }
+  }
+  .project-tech, .project-links {
+    margin: 0 auto;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0 5px;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  .project-title, .project-links {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 50%;
+    li {
+      display: inline-block;
+      font-size: 1.2rem;
+    }
+  }
+  .project-links { text-align: right; }
+  .project-tech { margin: 5px 0; }
+  .project-description {
+    margin-bottom: 0
   }
 }
 
