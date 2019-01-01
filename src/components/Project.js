@@ -6,10 +6,7 @@ export default ({ project }) => (
       <img src={project.image} />
     </div>
     <div className="project-card-info">
-      <h4>{project.title}</h4>
-      <ul className="project-tech">
-        {project.technologies.map(tech => <li>{tech}</li>)}
-      </ul>
+      <h4 className="project-title">{project.title}</h4>
       <ul className="project-links">
         {project.links.map(link => (
           <li>
@@ -18,6 +15,9 @@ export default ({ project }) => (
             </a>
           </li>
         ))}
+      </ul>
+      <ul className="project-tech">
+        {project.technologies.map(tech => <li>{tech}</li>)}
       </ul>
       <p className="project-description">{project.description}</p>
     </div>
