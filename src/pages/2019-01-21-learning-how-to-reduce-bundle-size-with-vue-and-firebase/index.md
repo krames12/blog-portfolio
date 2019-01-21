@@ -9,3 +9,5 @@ Links to reference
 
 from importing firebase to the individual packages. mono-repo things
 https://codeburst.io/firebase-package-names-and-bundle-sizes-ec10cede63f1
+vue lazy loading
+https://alexjover.com/blog/lazy-load-in-vue-using-webpack-s-code-splitting/
