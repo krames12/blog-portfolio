@@ -52,4 +52,21 @@ export default [
     description: `Movie database that pulls the top 20 movies from
     TheMovieDB.org's movie and tv show API.`,
   },
+  {
+    title: 'IanCha.se',
+    image:
+      'https://res.cloudinary.com/dndefcztu/image/upload/v1549294099/portfolio/ian-chase-portfolio.png',
+    technologies: ['PHP', 'SCSS', 'Grav CMS'],
+    links: [
+      {
+        url: 'http://iancha.se/',
+        classes: 'icon fas fa-link',
+      },
+      {
+        url: 'https://github.com/krames12/grav-portfolio-theme',
+        classes: 'icon fab fa-github',
+      },
+    ],
+    description: `A portfolio and blog site for Ian Chase. Designer and Graphic Artist`,
+  },
 ]
