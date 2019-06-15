@@ -1,7 +1,7 @@
 ---
 path: '/node-sass-gyp-error-and-how-to-fix-it'
 title: Node-SASS gyp error and how to fix it
-published: true
+published: false
 date: '2019-06-15'
 ---
 
